@@ -1,6 +1,25 @@
 # PartnerCrudAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) 
+
+## dependencies:
+
+@angular/cli: 1.2.0
+node: 8.1.4
+os: darwin x64
+@angular/animations: 4.2.6
+@angular/common: 4.2.6
+@angular/compiler: 4.2.6
+@angular/core: 4.2.6
+@angular/forms: 4.2.6
+@angular/http: 4.2.6
+@angular/platform-browser: 4.2.6
+@angular/platform-browser-dynamic: 4.2.6
+@angular/router: 4.2.6
+@angular/cli: 1.2.0
+@angular/compiler-cli: 4.2.6
+@angular/language-service: 4.2.6
+.
 
 ## Development server
 
