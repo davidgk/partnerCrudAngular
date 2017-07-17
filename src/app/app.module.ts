@@ -12,6 +12,7 @@ import { MainContainerComponent } from './commons/views/main-container/main-cont
 import { PartnerHomeComponent } from './crud/partner-home/partner-home.component';
 import { routerConfig } from './commons/routes_config/menu.config';
 import { RouterOutletComponent } from './commons/views/router-outlet/router-outlet.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RouterOutletComponent } from './commons/views/router-outlet/router-outl
     NavigatorComponent,
     MainContainerComponent,
     PartnerHomeComponent,
-    RouterOutletComponent
+    RouterOutletComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
