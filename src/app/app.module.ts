@@ -13,6 +13,9 @@ import { PartnerHomeComponent } from './crud/partner-home/partner-home.component
 import { routerConfig } from './commons/routes_config/menu.config';
 import { RouterOutletComponent } from './commons/views/router-outlet/router-outlet.component';
 import { HomeComponent } from './home/home.component';
+import { Logger } from "angular2-logger/core"; 
+import { environment }  from '../environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +34,15 @@ import { HomeComponent } from './home/home.component';
     JsonpModule,
     RouterModule.forRoot(routerConfig)
   ],
-  providers: [],
+  providers:    [ Logger ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+     constructor(private logger: Logger) {
+        console.log(environment.logger.level);
+        this.logger.level = environment.logger.level;
+    }  
+    
+    
+}

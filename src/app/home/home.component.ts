@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Logger } from "angular2-logger/core";
 
 @Component({
   selector: 'home',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _logger: Logger ){
+ 		console.log("Grande Dani!");
+ 		
+ 	}
 
   ngOnInit() {
   }

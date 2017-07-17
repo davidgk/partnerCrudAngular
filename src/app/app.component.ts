@@ -8,5 +8,6 @@ import { MainComponent } from "app/commons/views/main/main.component";
   entryComponents:[MainComponent]  
 })
 export class AppComponent {
-  
+  constructor(  ){
+ 	}
 }
