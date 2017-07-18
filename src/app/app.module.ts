@@ -9,12 +9,16 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './commons/views/main/main.component';
 import { NavigatorComponent } from './commons/views/navigator/navigator.component';
 import { MainContainerComponent } from './commons/views/main-container/main-container.component';
-import { PartnerHomeComponent } from './crud/partner-home/partner-home.component';
-import { routerConfig } from './commons/routes_config/menu.config';
+import { PartnerHomeComponent } from './crud/partner/partner-home.component';
+import { PartnerFormComponent } from "./crud/partner/partner-form/partner-form.component";
+
+
 import { RouterOutletComponent } from './commons/views/router-outlet/router-outlet.component';
 import { HomeComponent } from './home/home.component';
 import { Logger } from "angular2-logger/core"; 
 import { environment }  from '../environments/environment';
+import { routing } from "app/commons/routes_config/app.routing";
+import { NotFoundComponent } from "app/commons/views/not-found/not-found.component";
 
 
 @NgModule({
@@ -24,15 +28,17 @@ import { environment }  from '../environments/environment';
     NavigatorComponent,
     MainContainerComponent,
     PartnerHomeComponent,
+    PartnerFormComponent,
     RouterOutletComponent,
-    HomeComponent
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     JsonpModule,
-    RouterModule.forRoot(routerConfig)
+    routing
   ],
   providers:    [ Logger ],
   bootstrap: [AppComponent]
