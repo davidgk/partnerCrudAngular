@@ -9,8 +9,6 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './commons/views/main/main.component';
 import { NavigatorComponent } from './commons/views/navigator/navigator.component';
 import { MainContainerComponent } from './commons/views/main-container/main-container.component';
-import { PartnerHomeComponent } from './crud/partner/partner-home.component';
-import { PartnerFormComponent } from "./crud/partner/partner-form/partner-form.component";
 
 
 import { RouterOutletComponent } from './commons/views/router-outlet/router-outlet.component';
@@ -19,6 +17,7 @@ import { Logger } from "angular2-logger/core";
 import { environment }  from '../environments/environment';
 import { routing } from "app/commons/routes_config/app.routing";
 import { NotFoundComponent } from "app/commons/views/not-found/not-found.component";
+import { PartnerModule } from "app/crud/partner/partner.module";
 
 
 @NgModule({
@@ -27,8 +26,6 @@ import { NotFoundComponent } from "app/commons/views/not-found/not-found.compone
     MainComponent,
     NavigatorComponent,
     MainContainerComponent,
-    PartnerHomeComponent,
-    PartnerFormComponent,
     RouterOutletComponent,
     HomeComponent,
     NotFoundComponent
@@ -38,7 +35,9 @@ import { NotFoundComponent } from "app/commons/views/not-found/not-found.compone
     FormsModule,
     HttpModule,
     JsonpModule,
-    routing
+    routing,
+    PartnerModule
+    
   ],
   providers:    [ Logger ],
   bootstrap: [AppComponent]
